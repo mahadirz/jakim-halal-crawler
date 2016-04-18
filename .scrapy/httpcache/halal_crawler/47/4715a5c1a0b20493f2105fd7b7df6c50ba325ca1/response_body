@@ -1,0 +1,423 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>Directori Halal</title>
+<link rel="shortcut icon" type="image/x-icon" href="style/images/favicon.png" />
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+<link href='http://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="style/css/ie7.css" media="all" />
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="style/css/ie8.css" media="all" />
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" type="text/css" href="style/css/ie9.css" media="all" />
+<![endif]-->
+<link rel="stylesheet" href="modalwindow/modal.css" type="text/css" />
+<link rel="stylesheet" href="modalwindow/dhtmlwindow.css" type="text/css" />
+<script type="text/javascript" src="style/js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="style/js/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="style/js/jquery.jcarousel.js"></script>
+<script type="text/javascript" src="style/js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="style/js/carousel.js"></script>
+<script type="text/javascript" src="style/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="style/js/jquery.masonry.min.js"></script>
+<script type="text/javascript" src="style/js/jquery.slickforms.js"></script>
+<script type="text/javascript">
+function do_menu1(URL,ty){
+	document.frm.ty.value=ty;
+	document.frm.action = URL;
+	document.frm.target='_self';
+	document.frm.submit();
+}
+function do_menu(ty){
+	document.frm.ty.value=ty;
+	document.frm.action = 'directory_standalone.php';
+	document.frm.target='_self';
+	document.frm.submit();
+}
+function do_cari(ty){
+	document.frm.ty.value=ty;
+	document.frm.action = 'directory_standalone.php';
+	document.frm.target='_self';
+	document.frm.submit();
+}
+</script>
+<script type="text/javascript" src="modalwindow/dhtmlwindow.js">
+/***********************************************
+* DHTML Window Widget-  Dynamic Drive (www.dynamicdrive.com)
+* This notice must stay intact for legal use.
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+</script>
+<script type="text/javascript" src="modalwindow/modal.js"></script>
+<script type="text/javascript">
+function open_modal(URL, title){
+	//alert(URL);
+	emailwindow=dhtmlmodal.open('EmailBox', 'iframe', URL, title, 'width=850,height=500,center=1,resize=0,scrolling=1')
+} //End "opennewsletter" function
+//function openModal(URL, title){
+	//alert(URL);
+//	emailwindow=dhtmlmodal.open('EmailBox', 'iframe', URL, title, 'width=850,height=500,center=1,resize=0,scrolling=1')
+//} //End "opennewsletter" function
+</script>
+<script language="JavaScript">
+function openModal(URL,title) {
+	if (window.showModalDialog) { 
+		window.showModalDialog(URL,title, "dialogWidth:850;dialogHeight:500");  
+	} else { 
+		window.open(URL,title, 'height=850,width=500,toolbar=no,directories=no,status=no, linemenubar=no,scrollbars=no,resizable=no ,modal=yes');
+	}
+} 
+</script>
+</head>
+<body>
+<form name="frm" method="post" action="">
+<input type="hidden" name="ty" value="PR">
+<!-- Begin Wrapper -->
+<div id="wrapper">
+
+	<!-- Begin Sidebar -->
+	<div id="sidebar">
+		 
+	<!-- Begin Menu -->
+    <div id="menu" class="menu-v">
+       
+      <font style="color:#FFF">Negeri: </font>
+      <select name="negeri" onChange="do_menu('CO')">
+      	<option value="">Pilih negeri</option>
+                <option value="01">Johor</option>
+                <option value="02">Kedah</option>
+                <option value="03">Kelantan</option>
+                <option value="04">Melaka</option>
+                <option value="05">Negeri Sembilan</option>
+                <option value="06">Pahang</option>
+                <option value="08">Perak</option>
+                <option value="09">Perlis</option>
+                <option value="07">Pulau Pinang</option>
+                <option value="12">Sabah</option>
+                <option value="13">Sarawak</option>
+                <option value="10">Selangor</option>
+                <option value="11">Terengganu</option>
+                <option value="15">W.P. Labuan</option>
+                <option value="16">W.P. Putrajaya</option>
+                <option value="14">Wilayah Persekutuan</option>
+              </select>
+      <br><br>
+      <font style="color:#FFF"><b>Kategori / Skim</b></font>
+      <hr>
+	  <ul>
+        <li><a onClick="do_menu('CO')" style="cursor:pointer" >Syarikat </a></li>
+        <li><a onClick="do_menu('HO')" style="cursor:pointer" >Hotel & Resort </a></li>
+        <li><a onClick="do_menu('PE')" style="cursor:pointer" >Premis Makanan </a></li>
+        <li><a onClick="do_menu('MM')" style="cursor:pointer" >Menu Makanan (1,226)</a></li>
+        <li><a onClick="do_menu('PR')" style="cursor:pointer" class="active">Produk (63)</a></li>
+        <li><a onClick="do_menu('KO')" style="cursor:pointer" >Kosmetik </a></li>
+        <li><a onClick="do_menu('FM')" style="cursor:pointer" >Farmaseutikal </a></li>
+        <li><a onClick="do_menu('BG')" style="cursor:pointer" >Barang Gunaan </a></li>
+        <li><a onClick="do_menu('RS')" style="cursor:pointer" >Rumah Sembelihan </a></li>
+        <li><a onClick="do_menu('LO')" style="cursor:pointer" >Logistik </a></li>
+        <li><a onClick="do_menu('IN')" style="cursor:pointer" >International (2)</a></li>
+        <!--<li><a href="contact.html">Contact Us</a></li>-->
+      </ul>
+    </div>
+    <!-- End Menu -->
+   
+	</div>
+	<!-- End Sidebar -->
+	
+	<!-- Begin Content -->
+	<div id="content">
+	<h2>Maklumat Carian: <input type="text" size="40" name="cari" value="nescafe">&nbsp;
+        <input type="button" value=" Cari " onClick="do_cari('PR')"></h2>
+	<div class="line"></div>
+    
+    
+
+
+ 
+<!--<form name="frm" method="post" action="index.php?ty=directory&type=A">-->
+<div align="center">
+<h2>SENARAI PRODUK</h2>
+</div>
+
+		<table width="100%" border="1" align="center" cellpadding="10" cellspacing="0" id="gradient-style">
+              <tr bgcolor="#0066CC"> 
+            	<th width="8%" align="center" ><b><font color=white>Bil</font></b></th>
+                <th width="67%" align="center" ><b><font color=white>Produk</font></b></th>
+                <th width="15%" align="center" ><b><font color=white>Tarikh Tamat</font></b></th>
+                <th width="10%" align="center" ><strong><font color=white>Syarikat</font></strong></th>
+              </tr>
+                                          <tr bgcolor=""> 
+                <td valign="top" class="portlet_con_desc" align="right">1.&nbsp;</td>
+                <td valign="top" align="left" style="padding-left:10px">
+					H.P.A.K - (COLD DRINKS) <font color=#FF0000><b>NESCAFE</b></font> ICE                    					<br>-<i>MANNA</i>&nbsp;
+                    </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                  15-06-2016&nbsp;
+                </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                <img src="images/icon1.gif" width="18" height="17" border="0"  alt="MANNA" title="MANNA" style="cursor:pointer"
+                onclick="openModal('directory/slm_viewdetail.php?comp_code=COMP-20130917-143918&id=&type=P', 'Maklumat Sijil Halal');"></td>
+              </tr>
+                            <tr bgcolor=""> 
+                <td valign="top" class="portlet_con_desc" align="right">2.&nbsp;</td>
+                <td valign="top" align="left" style="padding-left:10px">
+					KEK LAPIS <font color=#FF0000><b>NESCAFE</b></font> CHEESE                    <br>BRAND: NORJAS BAKERY					<br>-<i>NORJAS BAKERY</i>&nbsp;
+                    </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                  15-07-2016&nbsp;
+                </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                <img src="images/icon1.gif" width="18" height="17" border="0"  alt="NORJAS BAKERY" title="NORJAS BAKERY" style="cursor:pointer"
+                onclick="openModal('directory/slm_viewdetail.php?comp_code=COMP-20140315-155043&id=&type=P', 'Maklumat Sijil Halal');"></td>
+              </tr>
+                            <tr bgcolor=""> 
+                <td valign="top" class="portlet_con_desc" align="right">3.&nbsp;</td>
+                <td valign="top" align="left" style="padding-left:10px">
+					KUEH LAPIS <font color=#FF0000><b>NESCAFE</b></font> BUAH-BUAHAN                    <br>BRAND: BOSTON CAKE HOUSE					<br>-<i>BOSTON CAKE HOUSE</i>&nbsp;
+                    </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                  15-06-2017&nbsp;
+                </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                <img src="images/icon1.gif" width="18" height="17" border="0"  alt="BOSTON CAKE HOUSE" title="BOSTON CAKE HOUSE" style="cursor:pointer"
+                onclick="openModal('directory/slm_viewdetail.php?comp_code=COMP-20050628-120419&id=&type=P', 'Maklumat Sijil Halal');"></td>
+              </tr>
+                            <tr bgcolor=""> 
+                <td valign="top" class="portlet_con_desc" align="right">4.&nbsp;</td>
+                <td valign="top" align="left" style="padding-left:10px">
+					KUEH LAPIS <font color=#FF0000><b>NESCAFE</b></font> BUAH-BUAHAN                    <br>BRAND: BOSTON CAKE HOUSE					<br>-<i>BOSTON CAKE HOUSE</i>&nbsp;
+                    </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                  31-07-2017&nbsp;
+                </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                <img src="images/icon1.gif" width="18" height="17" border="0"  alt="BOSTON CAKE HOUSE" title="BOSTON CAKE HOUSE" style="cursor:pointer"
+                onclick="openModal('directory/slm_viewdetail.php?comp_code=COMP-20050628-120419&id=&type=P', 'Maklumat Sijil Halal');"></td>
+              </tr>
+                            <tr bgcolor=""> 
+                <td valign="top" class="portlet_con_desc" align="right">5.&nbsp;</td>
+                <td valign="top" align="left" style="padding-left:10px">
+					<font color=#FF0000><b>NESCAFE</b></font>                    <br>BRAND: NESTLE					<br>-<i>JAYA MAJU FOOD SUPPLIES SDN BHD</i>&nbsp;
+                    </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                  <font title="Sijil telah tamat temph sah" style="cursor:pointer" color="#FF0000"><b>31-03-2016</b></font>&nbsp;
+                </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                <img src="images/icon1.gif" width="18" height="17" border="0"  alt="JAYA MAJU FOOD SUPPLIES SDN BHD" title="JAYA MAJU FOOD SUPPLIES SDN BHD" style="cursor:pointer"
+                onclick="openModal('directory/slm_viewdetail.php?comp_code=COMP-20110427-235317&id=&type=P', 'Maklumat Sijil Halal');"></td>
+              </tr>
+                            <tr bgcolor=""> 
+                <td valign="top" class="portlet_con_desc" align="right">6.&nbsp;</td>
+                <td valign="top" align="left" style="padding-left:10px">
+					<font color=#FF0000><b>NESCAFE</b></font> (SMOOV MACCHIATO/SMOOVMACCHIATO)                    <br>BRAND: <font color=#FF0000><b>NESCAFE</b></font>					<br>-<i>NESTLE MANUFACTURING (MALAYSIA) SDN. BHD.</i>&nbsp;
+                    </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                  31-08-2017&nbsp;
+                </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                <img src="images/icon1.gif" width="18" height="17" border="0"  alt="NESTLE MANUFACTURING (MALAYSIA) SDN. BHD." title="NESTLE MANUFACTURING (MALAYSIA) SDN. BHD." style="cursor:pointer"
+                onclick="openModal('directory/slm_viewdetail.php?comp_code=COMP-20140421-033331&id=&type=P', 'Maklumat Sijil Halal');"></td>
+              </tr>
+                            <tr bgcolor=""> 
+                <td valign="top" class="portlet_con_desc" align="right">7.&nbsp;</td>
+                <td valign="top" align="left" style="padding-left:10px">
+					<font color=#FF0000><b>NESCAFE</b></font> (SMOOV VANILLA/SMOOVVANILLA)                    <br>BRAND: <font color=#FF0000><b>NESCAFE</b></font>					<br>-<i>NESTLE MANUFACTURING (MALAYSIA) SDN. BHD.</i>&nbsp;
+                    </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                  31-08-2017&nbsp;
+                </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                <img src="images/icon1.gif" width="18" height="17" border="0"  alt="NESTLE MANUFACTURING (MALAYSIA) SDN. BHD." title="NESTLE MANUFACTURING (MALAYSIA) SDN. BHD." style="cursor:pointer"
+                onclick="openModal('directory/slm_viewdetail.php?comp_code=COMP-20140421-033331&id=&type=P', 'Maklumat Sijil Halal');"></td>
+              </tr>
+                            <tr bgcolor=""> 
+                <td valign="top" class="portlet_con_desc" align="right">8.&nbsp;</td>
+                <td valign="top" align="left" style="padding-left:10px">
+					<font color=#FF0000><b>NESCAFE</b></font> 2 IN 1 HOT MIX                    <br>BRAND: <font color=#FF0000><b>NESCAFE</b></font>					<br>-<i>NESTLE MANUFACTURING (M) SDN BHD</i>&nbsp;
+                    </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                  31-12-2017&nbsp;
+                </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                <img src="images/icon1.gif" width="18" height="17" border="0"  alt="NESTLE MANUFACTURING (M) SDN BHD" title="NESTLE MANUFACTURING (M) SDN BHD" style="cursor:pointer"
+                onclick="openModal('directory/slm_viewdetail.php?comp_code=COMP-20060317-074522&id=&type=P', 'Maklumat Sijil Halal');"></td>
+              </tr>
+                            <tr bgcolor=""> 
+                <td valign="top" class="portlet_con_desc" align="right">9.&nbsp;</td>
+                <td valign="top" align="left" style="padding-left:10px">
+					<font color=#FF0000><b>NESCAFE</b></font> 2IN1 HOT MIX                    <br>BRAND: <font color=#FF0000><b>NESCAFE</b></font>					<br>-<i>NESTLE MANUFACTURING (M) SDN BHD</i>&nbsp;
+                    </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                  <font title="Sijil telah tamat temph sah" style="cursor:pointer" color="#FF0000"><b>31-03-2016</b></font>&nbsp;
+                </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                <img src="images/icon1.gif" width="18" height="17" border="0"  alt="NESTLE MANUFACTURING (M) SDN BHD" title="NESTLE MANUFACTURING (M) SDN BHD" style="cursor:pointer"
+                onclick="openModal('directory/slm_viewdetail.php?comp_code=COMP-20060317-074522&id=&type=P', 'Maklumat Sijil Halal');"></td>
+              </tr>
+                            <tr bgcolor=""> 
+                <td valign="top" class="portlet_con_desc" align="right">10.&nbsp;</td>
+                <td valign="top" align="left" style="padding-left:10px">
+					<font color=#FF0000><b>NESCAFE</b></font> 3 IN 1 ORIGINAL                    <br>BRAND: <font color=#FF0000><b>NESCAFE</b></font>					<br>-<i>NESTLE MANUFACTURING (M) SDN BHD</i>&nbsp;
+                    </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                  30-06-2016&nbsp;
+                </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                <img src="images/icon1.gif" width="18" height="17" border="0"  alt="NESTLE MANUFACTURING (M) SDN BHD" title="NESTLE MANUFACTURING (M) SDN BHD" style="cursor:pointer"
+                onclick="openModal('directory/slm_viewdetail.php?comp_code=COMP-20060317-074522&id=&type=P', 'Maklumat Sijil Halal');"></td>
+              </tr>
+                            <tr bgcolor=""> 
+                <td valign="top" class="portlet_con_desc" align="right">11.&nbsp;</td>
+                <td valign="top" align="left" style="padding-left:10px">
+					<font color=#FF0000><b>NESCAFE</b></font> 3 IN 1 ORIGINAL                    <br>BRAND: <font color=#FF0000><b>NESCAFE</b></font>					<br>-<i>NESTLE MANUFACTURING (M) SDN BHD</i>&nbsp;
+                    </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                  31-01-2018&nbsp;
+                </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                <img src="images/icon1.gif" width="18" height="17" border="0"  alt="NESTLE MANUFACTURING (M) SDN BHD" title="NESTLE MANUFACTURING (M) SDN BHD" style="cursor:pointer"
+                onclick="openModal('directory/slm_viewdetail.php?comp_code=COMP-20060317-074522&id=&type=P', 'Maklumat Sijil Halal');"></td>
+              </tr>
+                            <tr bgcolor=""> 
+                <td valign="top" class="portlet_con_desc" align="right">12.&nbsp;</td>
+                <td valign="top" align="left" style="padding-left:10px">
+					<font color=#FF0000><b>NESCAFE</b></font> 3 IN 1 WHITE ESPRESSO/ <font color=#FF0000><b>NESCAFE</b></font> BLEND & BREW ORIGINAL                    <br>BRAND: <font color=#FF0000><b>NESCAFE</b></font>					<br>-<i>NESTLE MANUFACTURING (M) SDN BHD</i>&nbsp;
+                    </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                  30-06-2016&nbsp;
+                </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                <img src="images/icon1.gif" width="18" height="17" border="0"  alt="NESTLE MANUFACTURING (M) SDN BHD" title="NESTLE MANUFACTURING (M) SDN BHD" style="cursor:pointer"
+                onclick="openModal('directory/slm_viewdetail.php?comp_code=COMP-20060317-074522&id=&type=P', 'Maklumat Sijil Halal');"></td>
+              </tr>
+                            <tr bgcolor=""> 
+                <td valign="top" class="portlet_con_desc" align="right">13.&nbsp;</td>
+                <td valign="top" align="left" style="padding-left:10px">
+					<font color=#FF0000><b>NESCAFE</b></font> BLACK ROAST RTD CAN                    <br>BRAND: <font color=#FF0000><b>NESCAFE</b></font>					<br>-<i>NESTLE MANUFACTURING (M) SDN BHD</i>&nbsp;
+                    </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                  <font title="Sijil telah tamat temph sah" style="cursor:pointer" color="#FF0000"><b>31-03-2016</b></font>&nbsp;
+                </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                <img src="images/icon1.gif" width="18" height="17" border="0"  alt="NESTLE MANUFACTURING (M) SDN BHD" title="NESTLE MANUFACTURING (M) SDN BHD" style="cursor:pointer"
+                onclick="openModal('directory/slm_viewdetail.php?comp_code=COMP-20060317-074522&id=&type=P', 'Maklumat Sijil Halal');"></td>
+              </tr>
+                            <tr bgcolor=""> 
+                <td valign="top" class="portlet_con_desc" align="right">14.&nbsp;</td>
+                <td valign="top" align="left" style="padding-left:10px">
+					<font color=#FF0000><b>NESCAFE</b></font> BLEND & BREW MILD                    <br>BRAND: <font color=#FF0000><b>NESCAFE</b></font>					<br>-<i>NESTLE MANUFACTURING (M) SDN BHD</i>&nbsp;
+                    </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                  30-06-2016&nbsp;
+                </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                <img src="images/icon1.gif" width="18" height="17" border="0"  alt="NESTLE MANUFACTURING (M) SDN BHD" title="NESTLE MANUFACTURING (M) SDN BHD" style="cursor:pointer"
+                onclick="openModal('directory/slm_viewdetail.php?comp_code=COMP-20060317-074522&id=&type=P', 'Maklumat Sijil Halal');"></td>
+              </tr>
+                            <tr bgcolor=""> 
+                <td valign="top" class="portlet_con_desc" align="right">15.&nbsp;</td>
+                <td valign="top" align="left" style="padding-left:10px">
+					<font color=#FF0000><b>NESCAFE</b></font> BLEND & BREW RICH                    <br>BRAND: <font color=#FF0000><b>NESCAFE</b></font>					<br>-<i>NESTLE MANUFACTURING (M) SDN BHD</i>&nbsp;
+                    </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                  30-06-2016&nbsp;
+                </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                <img src="images/icon1.gif" width="18" height="17" border="0"  alt="NESTLE MANUFACTURING (M) SDN BHD" title="NESTLE MANUFACTURING (M) SDN BHD" style="cursor:pointer"
+                onclick="openModal('directory/slm_viewdetail.php?comp_code=COMP-20060317-074522&id=&type=P', 'Maklumat Sijil Halal');"></td>
+              </tr>
+                            <tr bgcolor=""> 
+                <td valign="top" class="portlet_con_desc" align="right">16.&nbsp;</td>
+                <td valign="top" align="left" style="padding-left:10px">
+					<font color=#FF0000><b>NESCAFE</b></font> BLEND & BREW ZERO SUGAR ADDED / <font color=#FF0000><b>NESCAFE</b></font> BLEND & BREW ZERO                    <br>BRAND: <font color=#FF0000><b>NESCAFE</b></font>					<br>-<i>NESTLE MANUFACTURING (M) SDN BHD</i>&nbsp;
+                    </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                  15-07-2017&nbsp;
+                </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                <img src="images/icon1.gif" width="18" height="17" border="0"  alt="NESTLE MANUFACTURING (M) SDN BHD" title="NESTLE MANUFACTURING (M) SDN BHD" style="cursor:pointer"
+                onclick="openModal('directory/slm_viewdetail.php?comp_code=COMP-20060317-074522&id=&type=P', 'Maklumat Sijil Halal');"></td>
+              </tr>
+                            <tr bgcolor=""> 
+                <td valign="top" class="portlet_con_desc" align="right">17.&nbsp;</td>
+                <td valign="top" align="left" style="padding-left:10px">
+					<font color=#FF0000><b>NESCAFE</b></font> CARAMEL LATTE / <font color=#FF0000><b>NESCAFE</b></font> LATTE CARAMEL                    <br>BRAND: <font color=#FF0000><b>NESCAFE</b></font>					<br>-<i>NESTLE MANUFACTURING (M) SDN BHD</i>&nbsp;
+                    </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                  31-01-2018&nbsp;
+                </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                <img src="images/icon1.gif" width="18" height="17" border="0"  alt="NESTLE MANUFACTURING (M) SDN BHD" title="NESTLE MANUFACTURING (M) SDN BHD" style="cursor:pointer"
+                onclick="openModal('directory/slm_viewdetail.php?comp_code=COMP-20060317-074522&id=&type=P', 'Maklumat Sijil Halal');"></td>
+              </tr>
+                            <tr bgcolor=""> 
+                <td valign="top" class="portlet_con_desc" align="right">18.&nbsp;</td>
+                <td valign="top" align="left" style="padding-left:10px">
+					<font color=#FF0000><b>NESCAFE</b></font> CLASSIC                      <br>BRAND: AYAM PENYET BEST					<br>-<i>AYAM PENYET BAGUS SDN BHD</i>&nbsp;
+                    </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                  <font title="Sijil telah tamat temph sah" style="cursor:pointer" color="#FF0000"><b>15-04-2016</b></font>&nbsp;
+                </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                <img src="images/icon1.gif" width="18" height="17" border="0"  alt="AYAM PENYET BAGUS SDN BHD" title="AYAM PENYET BAGUS SDN BHD" style="cursor:pointer"
+                onclick="openModal('directory/slm_viewdetail.php?comp_code=COMP-20111210-154542&id=&type=P', 'Maklumat Sijil Halal');"></td>
+              </tr>
+                            <tr bgcolor=""> 
+                <td valign="top" class="portlet_con_desc" align="right">19.&nbsp;</td>
+                <td valign="top" align="left" style="padding-left:10px">
+					<font color=#FF0000><b>NESCAFE</b></font> CLASSIC                    <br>BRAND: <font color=#FF0000><b>NESCAFE</b></font>					<br>-<i>NESTLE MANUFACTURING (M) SDN BHD</i>&nbsp;
+                    </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                  15-05-2016&nbsp;
+                </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                <img src="images/icon1.gif" width="18" height="17" border="0"  alt="NESTLE MANUFACTURING (M) SDN BHD" title="NESTLE MANUFACTURING (M) SDN BHD" style="cursor:pointer"
+                onclick="openModal('directory/slm_viewdetail.php?comp_code=COMP-20060317-074522&id=&type=P', 'Maklumat Sijil Halal');"></td>
+              </tr>
+                            <tr bgcolor=""> 
+                <td valign="top" class="portlet_con_desc" align="right">20.&nbsp;</td>
+                <td valign="top" align="left" style="padding-left:10px">
+					<font color=#FF0000><b>NESCAFE</b></font> CLASSIC                      <br>BRAND: AYAM PENYET BEST					<br>-<i>AYAM PENYET BAGUS SDN BHD</i>&nbsp;
+                    </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                  15-04-2018&nbsp;
+                </td>
+                <td class="portlet_con_desc" valign="top" align="center">
+                <img src="images/icon1.gif" width="18" height="17" border="0"  alt="AYAM PENYET BAGUS SDN BHD" title="AYAM PENYET BAGUS SDN BHD" style="cursor:pointer"
+                onclick="openModal('directory/slm_viewdetail.php?comp_code=COMP-20111210-154542&id=&type=P', 'Maklumat Sijil Halal');"></td>
+              </tr>
+                            <input type="hidden" name="hdnCounter" value=21>
+            </table>
+            <input type="hidden" name="t" value=""><input type="hidden" name="a" value=""></td></tr>
+    
+<table width="98%" border="0"  align="center">
+  <tr>
+    <td class="corporatedesc">
+      <div align="center"> 
+         [ <b><i>1</i></b> ,<a onClick="do_menu1('directory_standalone.php?page=2','PR')" style="cursor:pointer">2</a> <a onClick="do_menu1('directory_standalone.php?page=3','PR')" style="cursor:pointer">3</a> <a onClick="do_menu1('directory_standalone.php?page=4','PR')" style="cursor:pointer">4</a> ] <br> 
+	  	  <b>Total Record : 63 - Page 1 From 4</b>      </div>
+    </td>
+  </tr>
+</table>
+    </div>
+    <!-- End Footer -->
+    
+    
+	</div>
+	<!-- End Content -->
+	
+</div>
+<!-- End Wrapper -->
+<div class="clear"></div>
+<script type="text/javascript" src="style/js/scripts.js"></script>
+<!--[if !IE]> -->
+<script type="text/javascript" src="style/js/jquery.corner.js"></script>
+<!-- <![endif]-->
+</form>
+</body>
+</html>
